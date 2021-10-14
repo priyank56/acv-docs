@@ -1,0 +1,1276 @@
+{
+  "language": "French",
+  "code": "fr",
+  "attendance": {
+    "controls": {
+      "date": "Sélectionnez une date",
+      "teacher": "Commencez à saisir un nom",
+      "class": "Sélectionnez une classe",
+      "topic": ["Sujet", "Sujet du jour"],
+      "homework": ["Devoirs", "Devoirs du jour"],
+      "startTyping": "Commencez à taper...",
+      "save": "Enregistrer",
+      "cancel": "Annuler",
+      "total": "Total",
+      "present": "Présent",
+      "absent": "Absent",
+      "late": "en retard",
+      "justification": "Justification",
+      "export": "Exporter le rapport de présence",
+      "reasons": ["Maladie", "Urgence familiale", "Je ne me sens pas bien"],
+      "classType": ["Type de classe", "Physique", "Virtuelle"]
+    },
+    "body": {
+      "lessions": "Classe disponible",
+      "headers": {
+        "students": "Noms des étudiants",
+        "attendance": "Présence",
+        "notes": "Notes"
+      }
+    }
+  },
+  "AttendanceHistory": {
+    "controls": {
+      "date": ["Date de début", "Date de fin"],
+      "teacher": ["Sélectionnez un enseignant", "Commencez à saisir un nom "],
+      "class": "Sélectionnez une classe",
+      "export": "Exporter le rapport de tous les élèves"
+    },
+    "body": {
+      "boxes": [
+        "Classes sélectionnées",
+        "Nombre total d'élèves",
+        "Présent",
+        "Absent",
+        "En retard",
+        "Justification",
+        "Fréquentation moyenne"
+      ],
+      "table": [
+        "Nom de l'élève",
+        "Présent",
+        "Absent",
+        "En retard",
+        "Justification",
+        "Participation moyenne",
+        "Exporter"
+      ]
+    }
+  },
+  "export": {
+    "attendance": [
+      "Id de leçon",
+      "Nom de la classe",
+      "Date de la leçon",
+      "Nom de l'étudiant",
+      "Identifiant de l'e-mail de l'étudiant",
+      "Participation",
+      "Notes",
+      "Participation prise par"
+    ],
+    "allStudents": [
+      "Nom de l'étudiant",
+      "Identifiant de l'e-mail de l'étudiant",
+      "Nom du cours",
+      "Présent ",
+      " Absent ",
+      " En retard ",
+      " Justification ",
+      " Total "
+    ],
+    "student": [
+      " Id de la leçon ",
+      " Nom de la classe ",
+      " Date de la leçon ",
+      " Nom de l'étudiant ",
+      " Identifiant de l'e-mail de l'étudiant ",
+      "Participation",
+      "Notes",
+      "Participation prise par"
+    ]
+  },
+  "chart": {
+    "screens": {
+      "header": {
+        "reports": [
+          "Report for Subjects",
+          "Report pour les étudiants",
+          "Rapport pour les enseignants",
+          "Rapports spéciaux"
+        ],
+        "lable": "Présentation du contrôle de présence"
+      },
+      "subject": {
+        "controls": {
+          "date": {
+            "date1": ["Sélectionnez une date"],
+            "date2": ["Date de début"],
+            "date3": ["Date de fin"]
+          },
+          "dropdown": {
+            "teacher": "Commencez à taper un nom",
+            "class": "Sélectionnez une classe"
+          }
+        },
+        "boxs": [
+          "Subjects",
+          "Schedule Passes",
+          "Present",
+          "Absent",
+          "Tardive",
+          "Justification"
+        ],
+        "pie": {
+          "pie1": {
+            "lbl": "Participation des professeurs"
+          },
+          "pie2": {
+            "lbl": "Attendance Records",
+            "dataLbl": ["Present", "Absent", "Tardive", "Justification"]
+          }
+        },
+        "column": {
+          "title": "Compte par classe et par fréquentation",
+          "lableY": "Count of StudentEmailId",
+          "lableX": "ClassName",
+          "series": ["Present", "Absent", "Tardive", "Justification"]
+        },
+        "table": {
+          "header": [
+            "Nom du cours",
+            "Présent",
+            "Absent",
+            "Tardive",
+            "Justification",
+            "Total"
+          ]
+        }
+      },
+      "student": {
+        "boxs": ["Total Students"],
+        "pie": {
+          "pie1": {
+            "lbl": "Participation à la colonie"
+          },
+          "pie2": {
+            "lbl": "According to class scheduleSelon l'horaire des cours"
+          }
+        },
+        "column": {
+          "title": "Haut de la fréquentation des élèves pris",
+          "lableY": "Count of Attendance",
+          "lableX": "Nom d'étudiant"
+        },
+        "table": {
+          "header": [
+            "Nom d'étudiant",
+            "Présent",
+            "Absent",
+            "Tardive",
+            "Justification",
+            "Total"
+          ]
+        }
+      },
+      "special": {
+        "boxs": [
+          "Les facultés",
+          "Sujets",
+          "Colonies",
+          "Étudiant boursier",
+          "Étudiants irréguliers",
+          "Les étudiants employés"
+        ],
+        "pie": {
+          "pie1": {
+            "lbl": "Étudiants par colonie"
+          },
+          "pie2": {
+            "lbl": "Par vitesse de connexion"
+          }
+        },
+        "column": {
+          "title": "Top fréquentation par quartier",
+          "lableY": "Count of Attendance",
+          "lableX": "Colonia"
+        },
+        "table": {
+          "header": [
+            "Colonia",
+            "Présent",
+            "Absent",
+            "Tardive",
+            "Justification",
+            "Total"
+          ]
+        }
+      },
+      "teacher": {
+        "boxs": [
+          "Total enseignants",
+          "Sujets",
+          "Planifier des sessions",
+          "Planifier les laissez-passer",
+          "Passes prises",
+          "Pass sautés"
+        ],
+        "pie": {
+          "pie1": {
+            "lbl": "Participation par sujet"
+          },
+          "pie2": {
+            "lbl": "S'adapter à l'horaire des cours"
+          }
+        },
+        "column": {
+          "title": "Meilleure fréquentation prise par le professeur",
+          "lableY": "Count of StudentEmailId",
+          "lableX": "Participation prise par"
+        },
+        "table": {
+          "header": [
+            "Participation prise par",
+            "Présent",
+            "Absent",
+            "Tardive",
+            "Justification",
+            "Total"
+          ]
+        }
+      }
+    }
+  },
+  "Docs": [
+    {
+      "category": "INTRODUCTION",
+      "data": [
+        {
+          "title": "Comment créer votre compte ACV ?",
+          "content": [
+            {
+              "item": "Allez à <a href=\"https://demo.acv.app\"> demo.acv.app </a>",
+              "type": "text"
+            },
+            {
+              "item": "Cliquez sur le bouton d'abonnement sur le côté gauche de la barre de navigation",
+              "type": "text"
+            },
+            {
+              "item": "Sélectionnez n'importe quel plan de course",
+              "type": "text"
+            },
+            {
+              "item": "Il existe quatre plans différents au sein de l'ACV: qui est le plan gratuit, le plan Bronze, le plan Silver et le plan Gold",
+              "type": "text"
+            },
+            {
+              "item": "Cliquez sur le bouton Acheter maintenant pour l'un des plans",
+              "type": "text"
+            },
+            {
+              "item": "Vous serez redirigé vers la page d'inscription et vous devrez remplir certaines informations.",
+              "type": "text"
+            },
+            {
+              "item": "Vous devez ajouter le nom, le poste, votre courrier institutionnel, le nom de l'école et le numéro de téléphone.",
+              "type": "text"
+            },
+            {
+              "item": "Veuillez lire le terme et la condition et l'accepter, puis cliquez sur le bouton Créer mon compte",
+              "type": "text"
+            },
+            {
+              "item": "Il sera redirigé vers la page de paiement où vous devez ajouter les détails de votre carte de crédit valide et une fois le paiement effectué avec succès, nous vous fournirons une base de données distincte et vous serez le super administrateur qui aura tous les accès à votre compte et l'ensemble de l'application. ",
+              "type": "text"
+            },
+            {
+              "item": "Après une inscription réussie, vous recevrez un lien d'invitation vers votre compte de messagerie que vous avez ajouté au cours du processus d'inscription Microsoft.",
+              "type": "text"
+            },
+            {
+              "item": "Lorsque vous acceptez le lien d'invitation, vous serez redirigé vers la page Microsoft où vous pourrez définir votre mot de passe et votre nom d'affichage",
+              "type": "text"
+            },
+            {
+              "item": "Si vous définissez correctement les mots de passe, il redirigera vers la <a href=\"https://demo.acv.app\"> page d'accueil demo.acv.app </a>.",
+              "type": "text"
+            },
+            {
+              "item": "Maintenant, vous pouvez vous connecter avec votre compte et vous aurez accès à toutes les fonctions de l'ACV.",
+              "type": "text"
+            }
+          ],
+          "link": "#acv-acv"
+        },
+        {
+          "title": "Comment puis-je charger les données de l'élève, de l'enseignant et de la leçon ?",
+          "content": [
+            {
+              "item": "Après vous être enregistré et connecté avec succès, vous pouvez voir l'écran du gestionnaire d'accueil dans l'application qui est placé dans l'option de paramètres.",
+              "type": "text"
+            },
+            {
+              "item": "Lorsque vous sélectionnez le bouton \" Démarrer \" dans les paramètres, vous pouvez voir l'écran du gestionnaire de démarrage.",
+              "type": "text"
+            },
+            {
+              "item": "Vous pouvez télécharger l'exemple de fichier Excel où vous pouvez trouver le format du fichier Excel et le type de données qu'il peut télécharger.",
+              "type": "text"
+            },
+            {
+              "item": "Il y a deux fichiers Excel pour l'élève, le professeur et la leçon, vous pouvez le télécharger en cliquant sur le bouton de téléchargement.",
+              "type": "text"
+            },
+            {
+              "item": "Dans le modèle de données de la leçon, vous pouvez ajouter les informations relatives à la leçon où vous devez ajouter le titre de la leçon, la date de la leçon, l'heure de début et l'heure de fin de la leçon et vous devez également ajouter le professeur de cette leçon, c'est un champ obligatoire ",
+              "type": "text"
+            },
+            {
+              "item": "Après avoir terminé le modèle de données de leçon, vous pouvez télécharger le modèle de données de membre où vous pouvez ajouter les données d'étudiant, d'enseignant et d'administrateur",
+              "type": "text"
+            },
+            {
+              "item": "Il y a 3 rôles possibles qui est enseignant, élève et administrateur",
+              "type": "text"
+            },
+            {
+              "item": "Vous devez ajouter le titre du membre de l'équipe, le nom du membre, le rôle du membre, etc.",
+              "type": "text"
+            },
+            {
+              "item": "Après avoir terminé le modèle, vous devez télécharger le fichier Excel étape par étape.",
+              "type": "text"
+            },
+            {
+              "item": "Après avoir chargé avec succès la feuille Excel, vous pouvez voir le modal contextuel indiquant le nombre d'administrateurs étudiants, la leçon que vous avez obtenue",
+              "type": "text"
+            }
+          ],
+          "link": "#upload-data"
+        },
+        {
+          "title": "Comment pouvez-vous télécharger des images d'élèves enseignants ?",
+          "content": [
+            {
+              "item": "Il y a 2 autres étapes dans le gestionnaire d'accueil où vous pouvez télécharger les images de l'élève, de l'enseignant et du gestionnaire.",
+              "type": "text"
+            },
+            {
+              "item": "Vous pouvez également télécharger le fichier zip des images des élèves et des enseignants à titre d'exemple. Vous pouvez avoir une idée de la façon dont vous devez gérer le nom du fichier image de votre élève et de votre enseignant.",
+              "type": "text"
+            },
+            {
+              "item": "Il existe des règles pour télécharger l'image de l'élève et de l'enseignant.",
+              "type": "text"
+            },
+            {
+              "item": "Vous devez vous assurer que le nom de l'image de votre élève et de votre enseignant doit être l'adresse e-mail de l'élève ou l'adresse e-mail de l'enseignant.",
+              "type": "text"
+            },
+            {
+              "item": "Vous devez télécharger le fichier zip pour tous les étudiants et enseignants.",
+              "type": "text"
+            },
+            {
+              "item": "Après avoir créé le fichier zip, vous pouvez télécharger ce fichier zip et c'est tout pour le gestionnaire de démarrage.",
+              "type": "text"
+            },
+            {
+              "item": "Comment trouver la classe ?",
+              "type": "text"
+            },
+            {
+              "item": "Il y a 3 façons de trouver la classe dans l'acv.",
+              "type": "text"
+            },
+            {
+              "item": [
+                {
+                  "item": "Avec les données de la classe, vous pouvez sélectionner celle à partir de la date à laquelle vous avez chargé les classes lors du démarrage du gestionnaire",
+                  "type": "text"
+                },
+                {
+                  "item": "docs1.jpeg",
+                  "type": "img"
+                },
+                {
+                  "item": "Utiliser le nom de l'enseignant.",
+                  "type": "text"
+                },
+                {
+                  "item": "Vous pouvez trouver les cours par enseignant. Vous pouvez sélectionner celui de l'enseignant dans le menu déroulant ou vous pouvez essayer le nom de l'enseignant, puis vous pouvez sélectionner l'enseignant. Après avoir sélectionné l'enseignant, vous pouvez voir toutes les classes que l'enseignant prend. ",
+                  "type": "text"
+                },
+                {
+                  "item": "docs2.jpeg",
+                  "type": "img"
+                }
+              ],
+              "type": "list"
+            }
+          ],
+          "link": "#upload-images"
+        },
+        {
+          "title": "Sélection de la classe.",
+          "content": [
+            {
+              "item": "Vous pouvez trouver les classes par le nom de la classe. Vous pouvez sélectionner le nom de la classe dans le menu déroulant ou vous pouvez taper le nom de la classe dans la zone de recherche déroulante et vous pouvez sélectionner le nom de la classe. ",
+              "type": "text"
+            },
+            {
+              "item": "docs3.jpeg",
+              "type": "img"
+            }
+          ],
+          "link": "#select-class"
+        },
+        {
+          "title": "Comment pouvez-vous suivre le cours d'assiduité ?",
+          "content": [
+            {
+              "item": "Vous devez d'abord sélectionner l'une des classes qui est placée sur le côté droit",
+              "type": "text"
+            },
+            {
+              "item": "Après avoir sélectionné la classe dans la liste, vous pouvez voir tous les étudiants participant à cette classe avec le nom et la photo de profil de l'étudiant.",
+              "type": "text"
+            },
+            {
+              "item": "Pour la participation, il y a 3 options qui sont Présent, Absent et Retard. Et vous pouvez également ajouter des Raisons d'Absence telles que Maladie, Urgence Familiale, Ne pas se sentir bien.",
+              "type": "text"
+            },
+            {
+              "item": "Vous pouvez ajouter les notes pour l'élève et vous pouvez ajouter des informations supplémentaires dans le champ Notes, comme vous pouvez mentionner le devoir ou la tâche à faire.",
+              "type": "text"
+            },
+            {
+              "item": "Après avoir sélectionné la présence de l'élève, vous pouvez voir combien d'élèves sont présents, absents, en retard et également voir la justification du motif.",
+              "type": "text"
+            },
+            {
+              "item": "docs4.jpeg",
+              "type": "img"
+            }
+          ],
+          "link": "#take-attendance"
+        },
+        {
+          "title": "A quoi servent les boutons Sujet et Tâche sur l'écran d'assistance ?",
+          "content": [
+            {
+              "item": "Vous pouvez ajouter le sujet et le devoir de cette classe.",
+              "type": "text"
+            },
+            {
+              "item": "Après avoir sélectionné l'un des boutons, vous trouverez le modal contextuel où vous pouvez écrire la tâche ou le sujet, puis cliquez sur le bouton Enregistrer.",
+              "type": "text"
+            }
+          ],
+          "link": "#topic-homework"
+        },
+        {
+          "title": "Comment pouvez-vous prendre toute l'assistance à la fois ?",
+          "content": [
+            {
+              "item": "docs5.jpeg",
+              "type": "img"
+            },
+            {
+              "item": "Nous fournissons une telle fonctionnalité où les enseignants peuvent prendre la présence des élèves à la fois. Vous pouvez trouver la case à cocher en haut de l'en-tête. Lorsque vous cliquez sur cette case à cocher, vous verrez les trois autres boutons qui sont pour la participation, absent et en retard ",
+              "type": "text"
+            },
+            {
+              "item": "Si vous sélectionnez l'une des options d'assiduité, tous les étudiants seront sélectionnés comme option, et si vous souhaitez modifier l'assiduité d'étudiants spécifiques, vous le pouvez. Par exemple, vous avez 70 étudiants en classe et vous voulez pour prendre 68 étudiants comme présents et 2 sont absents, alors vous pouvez le faire en cochant la case, puis sélectionnez le bouton \"Présent\", puis tous les étudiants seront affichés comme présents, puis sélectionnez le bouton absent pour l'étudiant spécifique que vous veux comme présent ",
+              "type": "text"
+            }
+          ],
+          "link": "#attendance-once"
+        },
+        {
+          "title": "Comment puis-je ajouter des notes pour les étudiants ?",
+          "content": [
+            {
+              "item": "Vous pouvez trouver le champ de saisie supplémentaire avec la ligne étudiant, où vous pouvez écrire les notes ou la note de l'étudiant, ce que vous voulez.",
+              "type": "text"
+            }
+          ],
+          "link": "#add-notes"
+        }
+      ],
+      "link": "#intro-to-acv"
+    },
+    {
+      "category": "TABLEAU DE BORD",
+      "data": [
+        {
+          "title": "Aperçu",
+          "content": [
+            {
+              "item": "L'analyse est une fonctionnalité très importante dans l'ACV. Il existe 4 écrans d'analyse où un graphique est une représentation graphique pour la visualisation des données, dans lequel \" les données sont représentées par des symboles, tels que des barres dans un graphique à barres, des lignes dans un graphique en courbes ou des camemberts dans un camembert \".",
+              "type": "text"
+            },
+            {
+              "item": "Un graphique peut représenter des données numériques tabulaires, des fonctions ou certains types de structure qualité et fournit différentes informations.",
+              "type": "text"
+            },
+            {
+              "item": "Ici vous pouvez trouver 4 analyses différentes qui sont:",
+              "type": "text"
+            },
+            {
+              "item": [
+                {
+                  "item": "Analyse par classe (sujet)",
+                  "type": "text"
+                },
+                {
+                  "item": "Analyse par les étudiants",
+                  "type": "text"
+                },
+                {
+                  "item": "Analyse par les enseignants",
+                  "type": "text"
+                },
+                {
+                  "item": "Analyse par données spéciales (champ personnalisé)",
+                  "type": "text"
+                }
+              ],
+              "type": "list"
+            },
+            {
+              "item": "Ce tableau analytique est basé sur la classe ou la matière que les enseignants suivent.",
+              "type": "text"
+            },
+            {
+              "item": "Sur cet écran, vous pouvez trouver les données de deux manières",
+              "type": "text"
+            },
+            {
+              "item": [
+                {
+                  "item": "Affichage graphique",
+                  "type": "text"
+                },
+                {
+                  "item": "Camembert",
+                  "type": "text"
+                },
+                {
+                  "item": "Graphique linéaire",
+                  "type": "text"
+                },
+                {
+                  "item": "Format tabulaire",
+                  "type": "text"
+                }
+              ],
+              "type": "list"
+            }
+          ],
+          "link": "#overview"
+        },
+        {
+          "title": "Analyse par classe (sujet)",
+          "content": [
+            {
+              "title": "Camembert",
+              "content": [
+                {
+                  "item": "Il y a deux camemberts différents disponibles sur l'écran Analyse par classe (sujet), qui est Présence par faculté et Enregistrements de présence.",
+                  "type": "text"
+                },
+                {
+                  "item": "docs6.jpeg",
+                  "type": "img"
+                }
+              ],
+              "link": "#class-pie-charts"
+            },
+            {
+              "title": "Graphique à barres",
+              "content": [
+                {
+                  "item": "Il y a un graphique à barres basé sur la classe. Ce tableau représente l'assiduité des élèves par classe. C'est le nombre d'élèves présents, absents et en retard pour une classe particulière.",
+                  "type": "text"
+                },
+                {
+                  "item": "Si vous survolez le graphique à barres, vous verrez combien d'élèves sont présents, absents ou en retard.",
+                  "type": "text"
+                },
+                {
+                  "item": "docs17.jpeg",
+                  "type": "img"
+                }
+              ],
+              "link": "#class-bar-charts"
+            },
+            {
+              "title": "Affichage tabulaire",
+              "content": [
+                {
+                  "item": "Les mêmes données que vous trouverez sous forme de tableau trouvées dans le graphique à barres.",
+                  "type": "text"
+                },
+                {
+                  "item": "Vous pouvez faire plus avec les tableaux, comme vous pouvez trier les données en fonction de l'absence, du retard, de la présence et du total.",
+                  "type": "text"
+                },
+                {
+                  "item": "Si vous cliquez sur cette option, les données seront classées par ordre croissant ou décroissant.",
+                  "type": "text"
+                },
+                {
+                  "item": "docs18.jpeg",
+                  "type": "img"
+                }
+              ],
+              "link": "#class-table"
+            }
+          ],
+          "type": "topic",
+          "link": "#class-report"
+        },
+        {
+          "title": "Analyse par les étudiants",
+          "content": [
+            {
+              "title": "Camembert",
+              "content": [
+                {
+                  "item": "Il y a deux camemberts sur cet écran où l'un des graphiques est basé sur un champ personnalisé que vous avez ajouté dans la section des champs personnalisés et l'autre est basé sur la planification des cours.",
+                  "type": "text"
+                },
+                {
+                  "item": "Le deuxième graphique à secteurs montre les données du cours et l'endroit où le cours a été planifié.",
+                  "type": "text"
+                }
+              ],
+              "link": "#student-pie-charts"
+            },
+            {
+              "title": "Graphique à barres",
+              "content": [
+                {
+                  "item": "Dans ce graphique à barres représentant les données des étudiants, vous pouvez voir toutes les données des étudiants indiquant le nombre total d'étudiants présents.",
+                  "type": "text"
+                },
+                {
+                  "item": "Si vous survolez le graphique à barres, vous pouvez voir le nom de l'élève et le nombre total du présent.",
+                  "type": "text"
+                },
+                {
+                  "item": "docs7.jpeg",
+                  "type": "img"
+                }
+              ],
+              "link": "#student-bar-charts"
+            },
+            {
+              "title": "Affichage tabulaire",
+              "content": [
+                {
+                  "item": "Les mêmes données que vous trouverez sous forme de tableau trouvées dans le graphique à barres.",
+                  "type": "text"
+                },
+                {
+                  "item": "Vous pouvez faire plus avec les tableaux, comme vous pouvez trier les données en fonction de l'absence, du retard, de la présence et du total.",
+                  "type": "text"
+                },
+                {
+                  "item": "Si vous cliquez sur cette option, les données seront classées par ordre croissant ou décroissant.",
+                  "type": "text"
+                }
+              ],
+              "link": "#table-étudiant"
+            }
+          ],
+          "type": "topic",
+          "link": "#student-report"
+        },
+        {
+          "title": "Analyse par les enseignants",
+          "content": [
+            {
+              "title": "Camembert",
+              "content": [
+                {
+                  "item": "Voici deux camemberts disponibles dans l'écran d'analyse de l'enseignant, l'un représente les données du sujet et l'autre représente les données de la classe en fonction de l'horaire de la classe.",
+                  "type": "text"
+                },
+                {
+                  "item": "docs8.jpeg",
+                  "type": "img"
+                }
+              ],
+              "link": "#teacher-pie-charts"
+            },
+            {
+              "title": "Graphique à barres",
+              "content": [
+                {
+                  "item": "Cet écran d'analyse représente le graphique des enseignants où vous pouvez afficher les données de l'enseignant indiquant le nombre d'élèves présents, absents et en retard dans cette classe d'enseignant particulière.",
+                  "type": "text"
+                }
+              ],
+              "link": "#teacher-table"
+            }
+          ],
+          "type": "topic",
+          "link": "#teacher-report"
+        }
+      ],
+      "link": "#dashboard"
+    },
+    {
+      "category": "HISTORIQUE DE PRÉSENCE",
+      "data": [
+        {
+          "title": "Exporter les données de l'étudiant",
+          "content": [
+            {
+              "item": "Dans la section Historique de présence, vous pouvez trouver toutes les informations relatives à la présence de tous les élèves.",
+              "type": "text"
+            },
+            {
+              "item": "Il existe deux façons d'exporter ou de télécharger des informations sur les élèves au format Excel.",
+              "type": "text"
+            },
+            {
+              "item": [
+                {
+                  "item": "Toutes les informations sur les étudiants.",
+                  "type": "text"
+                },
+                {
+                  "item": "Informations d'un seul étudiant.",
+                  "type": "text"
+                }
+              ],
+              "type": "list"
+            },
+            {
+              "item": "Il existe trois façons de filtrer les informations sur les étudiants.",
+              "type": "text"
+            },
+            {
+              "item": [
+                {
+                  "item": "Pour sélectionner la date de début et de fin",
+                  "type": "text"
+                },
+                {
+                  "item": "Pour sélectionner le professeur",
+                  "type": "text"
+                },
+                {
+                  "item": "Pour sélectionner la classe",
+                  "type": "text"
+                },
+                {
+                  "item": "docs11.jpeg",
+                  "type": "img"
+                }
+              ],
+              "type": "list"
+            },
+            {
+              "item": "Vous pouvez télécharger toutes les informations des élèves sur l'historique des présences en cliquant sur ce bouton Exporter. Données au format feuille Excel où vous trouverez le nom de l'élève, le nom du professeur, le nom de la classe , la date de la leçon, l'heure de début de la leçon, la fréquentation prise par et bien d'autres. ",
+              "type": "text"
+            },
+            {
+              "item": "Vous pouvez télécharger les informations d'un seul utilisateur sur l'historique de présence en cliquant sur le bouton Exporter qui est placé dans les lignes du tableau.",
+              "type": "text"
+            },
+            {
+              "item": "Si vous pouvez trouver les mêmes informations trouvées dans le fichier Excel ci-dessus",
+              "type": "text"
+            }
+          ],
+          "link": "#export-data"
+        },
+        {
+          "title": "Comment exporter ou télécharger les informations de l'élève ?",
+          "content": [
+            {
+              "item": "Vous pouvez télécharger toutes les informations des élèves sur l'historique des présences en cliquant sur ce bouton Exporter. Données au format feuille Excel où vous trouverez le nom de l'élève, le nom du professeur, le nom de la classe , la date de la leçon, l'heure de début de la leçon, la fréquentation prise par et bien d'autres. ",
+              "type": "text"
+            },
+            {
+              "item": "Vous pouvez télécharger les informations d'un seul utilisateur sur l'historique de présence en cliquant sur le bouton Exporter qui est placé dans les lignes du tableau.",
+              "type": "text"
+            },
+            {
+              "item": "Si vous pouvez trouver les mêmes informations que celles trouvées dans le fichier Excel ci-dessus.",
+              "type": "text"
+            }
+          ],
+          "link": "#student-export"
+        }
+      ],
+      "link": "#attendance-history"
+    },
+    {
+      "category": "PARAMETRES",
+      "data": [
+        {
+          "item": "Il y a deux onglets sur la page de configuration qui sont Étudiants et Enseignant. Vous pouvez gérer les informations des étudiants et des enseignants.",
+          "type": "info"
+        },
+        {
+          "title": "Étudiants",
+          "content": [
+            {
+              "item": "docs12.jpeg",
+              "type": "img"
+            },
+            {
+              "item": "Vous pouvez également afficher les informations personnelles de l'élève et l'historique de présence.",
+              "type": "text"
+            },
+            {
+              "item": "Vous pouvez vérifier combien de leçons vous avez suivies ou combien de leçons vous avez manquées ou manquées.",
+              "type": "text"
+            },
+            {
+              "item": "Vous pouvez également afficher les informations relatives au champ personnalisé.",
+              "type": "text"
+            }
+          ],
+          "link": "#manage-students"
+        },
+        {
+          "title": "Enseignants",
+          "content": [
+            {
+              "item": "docs13.jpeg",
+              "type": "img"
+            },
+            {
+              "item": "Dans une sélection d'enseignants, vous pouvez voir les informations personnelles de l'enseignant et les informations relatives à leurs cours, où vous pouvez trouver combien d'élèves sont présents dans votre cours.",
+              "type": "text"
+            },
+            {
+              "item": "Vous pouvez trouver le rôle d'enseignant, il y a deux rôles qui sont administrateur et enseignant.",
+              "type": "text"
+            },
+            {
+              "item": "Si l'enseignant a un rôle d'administrateur, vous pouvez voir le point bleu avec le texte \" Administrateur \".",
+              "type": "text"
+            }
+          ],
+          "link": "#manage-teachers"
+        }
+      ],
+      "link": "#setting"
+    },
+    {
+      "category": "CHAMPS PERSONNALISÉS",
+      "data": [
+        {
+          "title": "Introduction aux champs personnalisés",
+          "content": [
+            {
+              "item": "Les champs personnalisés sont utilisés pour afficher un tableau d'étudiants en fonction de vos données personnalisées. Fondamentalement, les champs personnalisés sont associés aux étudiants, où nous pouvons ajouter 5 champs personnalisés pour chaque étudiant.",
+              "type": "text"
+            },
+            {
+              "item": "Vous pouvez afficher et filtrer les données des étudiants et afficher le tableau en fonction du champ personnalisé des étudiants.",
+              "type": "text"
+            },
+            {
+              "item": "L'administrateur doit charger les données des champs personnalisés de l'élève pour voir le graphique sur le tableau de bord.",
+              "type": "text"
+            },
+            {
+              "item": "Nous fournissons les 5 champs personnalisés par défaut aux étudiants.",
+              "type": "text"
+            },
+            {
+              "item": "L'administrateur peut ajouter ou supprimer les informations et la description du champ personnalisé.",
+              "type": "text"
+            },
+            {
+              "item": "Vous pouvez ajouter un maximum de 10 champs personnalisés, où vous ne pouvez activer que les 5 champs personnalisés, le reste des champs sera désactivé.",
+              "type": "text"
+            },
+            {
+              "item": "Vous pouvez désactiver et activer les champs personnalisés en fonction de vos intérêts.",
+              "type": "text"
+            }
+          ],
+          "link": "#custom-fields"
+        },
+        {
+          "title": "Comment ajouter les nouveaux champs personnalisés ?",
+          "content": [
+            {
+              "item": "Vous pouvez trouver le bouton \" Ajouter \" en haut à droite.",
+              "type": "text"
+            },
+            {
+              "item": "Cliquez sur le bouton Ajouter, un modèle s'ouvrira où vous pourrez voir le titre du champ personnalisé, les descriptions, le type de champ et l'option d'activation et de désactivation.",
+              "type": "text"
+            },
+            {
+              "item": "Après avoir rempli les détails, cliquez sur le bouton \" Enregistrer \", votre champ personnalisé a été ajouté.",
+              "type": "text"
+            },
+            {
+              "item": "docs14.jpeg",
+              "type": "img"
+            },
+            {
+              "item": "Vous pouvez modifier les champs personnalisés existants et les désactiver.",
+              "type": "text"
+            },
+            {
+              "item": "docs15.jpeg",
+              "type": "img"
+            }
+          ],
+          "link": "#add-cf"
+        },
+        {
+          "title": "Comment ajouter des données à partir des champs personnalisés des étudiants ?",
+          "content": [
+            {
+              "item": "Il existe une option où vous pouvez charger la feuille Excel avec les données des étudiants.",
+              "type": "text"
+            },
+            {
+              "item": "Vous pouvez télécharger l'exemple de feuille Excel et remplir les données de l'étudiant.",
+              "type": "text"
+            },
+            {
+              "item": "Lorsque vous êtes prêt avec les données du champ personnalisé de l'étudiant, vous pouvez télécharger ce fichier Excel directement.",
+              "type": "text"
+            },
+            {
+              "item": "docs16.jpeg",
+              "type": "img"
+            }
+          ],
+          "link": "#add-cf-data"
+        }
+      ],
+      "link": "#custom-fields"
+    },
+    {
+      "category": "ADMINISTRER L'ÉCOLE",
+      "data": [
+        {
+          "item": [
+            {
+              "item": "Vous pouvez gérer les informations relatives à votre école où vous pouvez mettre à jour :",
+              "type": "info"
+            },
+            {
+              "item": [
+                {
+                  "item": "Nom de l'école",
+                  "type": "text"
+                },
+                {
+                  "item": "Nom de l'école",
+                  "type": "text"
+                },
+                {
+                  "item": "Adresse de l'école",
+                  "type": "text"
+                },
+                {
+                  "item": "Logo de l'école personnalisé",
+                  "type": "text"
+                }
+              ],
+              "type": "list"
+            },
+            {
+              "item": "Voici quelques trucs sympas avec le logo de l'école. Vous pouvez télécharger le logo de votre choix sur ACV et vous pouvez voir votre logo téléchargé en haut à gauche au lieu du logo Tangible It.",
+              "type": "info"
+            }
+          ],
+          "type": "infoList"
+        },
+        {
+          "title": "Comment puis-je télécharger un logo personnalisé ?",
+          "content": [
+            {
+              "item": "docs20.jpeg",
+              "type": "img"
+            },
+            {
+              "item": "Vous pouvez voir la zone de saisie du fichier intitulée School Image (136 * 32). Si vous souhaitez mettre à jour votre logo avec le logo Tangible IT, vous pouvez cliquer sur ce bouton, vous pouvez sélectionner votre logo dans la boîte de dialogue, puis cliquez sur le bouton Enregistrer. ",
+              "type": "info"
+            },
+            {
+              "item": [
+                {
+                  "item": "Après avoir cliqué sur le bouton Enregistrer, votre logo avec l'écran sur le côté gauche et le remplacer par le logo par défaut.",
+                  "type": "text"
+                },
+                {
+                  "item": "Par défaut, vous pouvez trouver le logo par défaut de notre logo Tangible IT et ce changement n'est autorisé qu'aux super administrateurs, les enseignants et l'administrateur ne peuvent pas gérer les informations de l'école et ne peuvent pas télécharger de logo personnalisé. ",
+                  "type": "text"
+                }
+              ],
+              "type": "list"
+            }
+          ],
+          "link": "#update-school-info"
+        }
+      ],
+      "link": "#manage-school"
+    }
+  ],
+  "DocsLables": ["Trouver quelque chose", "Rechercher"],
+  "startUp": {
+    "initial": [
+      "Quelle base de données voulez-vous choisir ?",
+      "Données de démonstration",
+      "Télécharger des données",
+      "Cette action va changer votre base de données, êtes-vous sûr de passer à la démo acv ?",
+      "Télécharger la confirmation des données",
+      "Cette action fera basculer votre base de données vers la base de données actuelle, êtes-vous sûr de passer à votre acv actuel ?",
+      "Confirmer",
+      "Annuler",
+      "D'accord",
+      "Une erreur s'est produite ! Contactez le service client si le problème n'est pas résolu !",
+      "Confirmation des données de démonstration"
+    ],
+    "controls": {
+      "navigation": [
+        "Données de cours",
+        "Données des membres",
+        "Photos d'étudiants",
+        "Photos des professeurs",
+        "Finir"
+      ],
+      "action": [
+        "Télécharger",
+        "Sélectionner un fichier",
+        "Télécharger",
+        "Accueil",
+        "Précédent",
+        "Prochain",
+        "Sauter",
+        "Toutes nos félicitations!"
+      ],
+      "modal": [
+        "OK",
+        "Confirmer",
+        "Annuler",
+        "Retour à la page d'accueil",
+        "Voulez-vous vraiment aller à la page d'accueil ? Vous perdrez toutes les modifications qui ne sont pas enregistrées."
+      ]
+    },
+    "content": [
+      "<h1> Données de la leçon </h1> <ul className = 'Karla list'> <li> Téléchargez le modèle et remplissez tous les détails comme indiqué dans les en-têtes. </li> <li > Do ne pas ajouter de caractères spéciaux dans les dates, les heures ou les e-mails. </li> <li> Ne pas modifier le format dans <b className = 'fw6'> ClassName </b> (nom de la leçon). Ne pas supprimer '-' dans le milieu. </li> <li> Nom de classe valide : <b className = 'fw6'> <a title='Category'> Sciences naturelles </a> - <a title='ClassName'> Biologie 1</a> - <a title='GroupNumber'> 301 </a> </b>. <QuestionCircleIcon outline title = 'Sciences naturelles (Catégorie) - Biologie 1 (ClassName) - 301 (GroupNumber)' /> </li> </ul> ",
+      "<h1> Détails du membre </h1> <ul className = 'Karla list'> <li> Téléchargez le modèle et remplissez tous les détails. </li> <li> Aucune utilisation caractères spéciaux dans les e-mails. </li> <li> Vous pouvez attribuer ces rôles aux utilisateurs. </li> <ul> <li> <b className = 'fw6'> Administrateur </b> : Superviser et prendre les présences au nom de n'importe quel enseignant. </li> <li> <b className = 'fw6'> Enseignant </b> : Prenez votre propre présence. </li> <li> <b className = 'fw6'> Élève </b> : C'est sous réserve de présence. </li> </ul> </ul> ",
+      "<h1> Image des élèves </h1> <ul className = 'Karla list'> <li> Téléchargez l'exemple ZIP et créez un nouveau un pour les étudiants.</li> <li> Le fichier image doit être dans l'un des formats suivants : png, jpg ou jpeg. </li> <li> Enregistrez le nom du fichier comme adresse e-mail de l'élève. </li> <li > Exemple : l'e-mail est <b className = 'fw6'> abc.xyz@example.com </b> le nom doit être - <b className = 'fw6'> abc. xyz@example. com.jpg </b> </li> </ul> ",
+      "<h1> Teacher image </h1> <ul className = 'Karla list'> <li> Téléchargez l'exemple ZIP et créez un nouveau pour les enseignants. </li> <li> Le fichier image doit être dans l'un des formats suivants : png, jpg ou jpeg. </li> <li> Enregistrez le nom du fichier comme adresse e-mail de l'enseignant. </li> <li> Exemple :l'e-mail est <b className = 'fw6'> abc.xyz@example.com </b> le nom doit être - <b className = 'fw6'> abc.xyz@example .com .jpg </b> </li> </ul> "
+    ]
+  },
+  "setting": {
+    "init": [
+      "Gérer -",
+      "➜ Veuillez sélectionner n'importe quelle option pour afficher les données...",
+      "Rechercher...",
+      "Fermer",
+      "Suivant",
+      "Précédent",
+      "Limite de pages"
+    ],
+    "student": [
+      "Présence",
+      "Champs personnalisés",
+      "Total",
+      "Présente",
+      "Ausente",
+      "Retardo",
+      "Justificado"
+    ],
+    "teacher": [
+      "Informations sur la leçon",
+      "Nombre total d'élèves",
+      "Présente",
+      "Ausente",
+      "Retardo",
+      "Justificado",
+      "Changer de rôle",
+      "Aucune information sur la leçon disponible !"
+    ],
+    "customField": {
+      "content": "<li><b className='fw6'>Téléchargez</b> le modèle et ajoutez les données appropriées.</li><li>Vous pouvez ajouter des données (<b className='fw6'>Yes</b> ou <b className='fw6'>No</b>) si le type de champ sélectionné est <b className='fw6'>Booléen</b>.</li><li>Vous pouvez ajouter n'importe quel <b className=' fw6'>texte </b> si le type de champ sélectionné est <b className='fw6'>Texte</b>.</li><li>Vous pouvez ajouter n'importe quelle <b className='fw6'>valeur numérique</b> si le type du champ sélectionné est <b className='fw6'>Numérique</b>.</li><li>Veuillez ne pas ajouter, supprimer ou modifier l'ordre des en-têtes de champs personnalisés dans une feuille Excel donnée.</li><li>Vous ne pouvez fournir que des données customField ; ne modifiez pas les e-mails des utilisateurs.</li><li>Téléchargez le modèle une fois que vous avez terminé de modifier les données.</li>"
+    },
+    "names": ["Étudiants", "Enseignants", "Champs personnalisés", "Écoles"],
+    "school": []
+  },
+  "landing": {
+    "initial": [],
+    "header": [
+      [
+        "Informations",
+        ["Caractéristiques", " Gérer le contrôle des présences."],
+        ["Enseignants", "Gérer le contrôle des enseignants."],
+        ["Directeurs", "Gérer le contrôle des entreprises."]
+      ],
+      [
+        "Ressource",
+        ["Parents", "Obtenez des rapports de présence de vos enfants."],
+        [
+          "Autorités",
+          "Obtenir des informations sur les indicateurs d'abandon."
+        ],
+        [
+          "Écoles",
+          "Utiliser des outils personnalisés pour contrer l'absentéisme."
+        ]
+      ],
+      "Documents",
+      "Des prix",
+      "Contact",
+      "Accès",
+      "Abonnement"
+    ],
+    "hero": [
+      "Il est temps d'étendre vos",
+      "cours en ligne",
+      "Gérez le contrôle des présences et offrez une visibilité aux dirigeants via des tableaux de bord illustrant le comportement de présence.",
+      "Demander une démo",
+      "Documentation"
+    ],
+    "feature": [
+      "Les tableaux de bord ACV sont mis à jour en temps réel",
+      "Vérifiez le comportement de présence à tout moment, n'importe où.",
+      [
+        "Précharger les cours",
+        "Importez votre établissement calendrier officiel de votre système scolaire."
+      ],
+      [
+        "Prendre des passes décisives",
+        "Audit les passes décisives prises ou effectuer des passes décisives en remplacement."
+      ],
+      [
+        "Analyser les comportements",
+        "Pour cela vous disposez de 4 panneaux d'informations intéressants."
+      ]
+    ],
+    "teacher": [
+      "Fonctionnalités principales pour les enseignants",
+      "Les fonctionnalités de portabilité et de réactivité vous permettent d'utiliser n'importe quel appareil pour effectuer les tâches suivantes.",
+      [
+        "Realizar toma de asistencia de clases programadas.",
+        "Registraire tema del día y tarea respectiva.",
+        "Asignar notas por alumno.",
+        "Exporter des informations d'assistance."
+      ]
+    ],
+    "director": [
+      "Facile à utiliser !",
+      "Vivez l'expérience",
+      [
+        "Nouveau",
+        "Assistance rapide",
+        "Permettez aux enseignants de prendre la présence en quelques secondes et à partir de n'importe quel appareil."
+      ],
+      [
+        "Conseils",
+        "Définir des métriques",
+        "Pour vous aider à définir des stratégies contre le décrochage."
+      ],
+      [
+        "Mettre à jour",
+        "Superviser",
+        "Consultez tableros con los indicadores afectados por la asistencia."
+      ]
+    ],
+    "resource": [
+      [
+        "Parents",
+        "Ici vous pouvez savoir quelles informations vous pouvez demander à l'enseignant pour obtenir les rapports de présence des élèves.",
+        "En savoir plus"
+      ],
+      [
+        "Autorités",
+        "Vous pouvez lire sur la sécurité, le transport, la communication ou d'autres problèmes qui encouragent l'absentéisme à suivre toute procédure.",
+        "En savoir plus"
+      ],
+      [
+        "Écoles",
+        "Les indicateurs ACV peuvent soutenir la définition d'une stratégie de lutte contre le décrochage, la planification des cours et l'identification du moment exact où l'aide est prise.",
+        "Apprendre encore plus"
+      ]
+    ],
+    "price": [
+      "Prix simples et directs",
+      " Gérez le contrôle des présences et offrez une visibilité aux dirigeants via des tableaux de bord illustrant le comportement de présence.",
+      [
+        "Enseignants",
+        "Etudiants",
+        "Leçons",
+        "Mois",
+        "Mises à jour gratuites",
+        "Assistance en 1 jour ouvrable"
+      ],
+      "Acheter maintenant",
+      [
+        "Vous n'avez pas trouvé le plan selon vos besoins ?",
+        "S'il te plaît",
+        "pour la fonctionnalité que vous recherchez, nous vous contacterons avec la meilleure alternative."
+      ],
+      " Nous contacter "
+    ],
+    "registration": [
+      "Créez votre compte",
+      ["Fait avec ", "pour la communauté éducative."],
+      "Pedro Perez",
+      "Responsable du service informatique",
+      "nom@école-mail.com",
+      "Nom complet de votre école.",
+      "Rue, numéro, quartier, ville.",
+      "+15144572886",
+      ["J'accepte les", " termes et conditions"],
+      "Créer mon compte",
+      ["Avez-vous déjà un compte?", "Connexion"]
+    ],
+    "demo": [
+      ["Nom de l'école :", "Nom complet de votre école"],
+      ["Adresse de l'école :", "Rue, numéro, quartier, ville"],
+      ["Téléphone de l'école :", "+15144572886"],
+      ["Nom d'utilisateur :", "Pedro Pérez"],
+      ["E-mail :", "nom@école-mail.com"],
+      ["Fermer", "Envoyer"]
+    ],
+    "footer": [
+      "Des solutions géniales pour votre école",
+      "En savoir plus sur nos applications.",
+      "ACV gère le contrôle des présences et offre une visibilité aux dirigeants via des tableaux de bord illustrant le comportement de présence.",
+      [
+        "À propos",
+        "Conditions générales",
+        "Politique de confidentialité",
+        "Cookies",
+        "Contact"
+      ],
+      ["NOUS", "Vérifier le coupon", "Centre d'aide", "Docs"],
+      "Copyright 2021",
+      "ACV - Asistente de clases virtuales",
+      ". Tous droits réservés.",
+      [
+        "Nom",
+        "Pedro Pérez",
+        "Email",
+        "nom@école-mail.com",
+        "Message",
+        "Ecrivez votre message ici.",
+        "J'accepte les",
+        "Termes et Conditions",
+        "Laisser un message"
+      ],
+      "Aide"
+    ]
+  }
+}

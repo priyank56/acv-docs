@@ -1,0 +1,1264 @@
+{
+  "language": "English",
+  "code": "en",
+  "attendance": {
+    "controls": {
+      "date": "Select a date",
+      "teacher": "Start typing a name",
+      "class": "Select a class",
+      "topic": ["Topic", "Today's Topic"],
+      "homework": ["Homework", "Today's Homework"],
+      "startTyping": "Start typing...",
+      "save": "Save",
+      "cancel": "Cancel",
+      "total": "Total",
+      "present": "Present",
+      "absent": "Absent",
+      "late": "Late",
+      "justification": "Justification",
+      "export": "Export Attendance Report",
+      "reasons": ["Sickness", "Family emergency", "Not feel well"],
+      "classType": ["Class Type", "Physical", "Virtual"]
+    },
+    "body": {
+      "lessions": "Available Class",
+      "headers": {
+        "students": "Student Names",
+        "attendance": "Attendance",
+        "notes": "Notes"
+      }
+    }
+  },
+  "AttendanceHistory": {
+    "controls": {
+      "date": ["Starting date", "Ending date"],
+      "teacher": ["Select a teacher", "Start typing a name"],
+      "class": "Select a class",
+      "export": "Export All Students Report"
+    },
+    "body": {
+      "boxes": [
+        "Selected Classes",
+        "Total Students",
+        "Present",
+        "Absent",
+        "Late",
+        "Justification",
+        "Average Attendance"
+      ],
+      "table": [
+        "Student Name",
+        "Present",
+        "Absent",
+        "Late",
+        "Justification",
+        "Average Attendance",
+        "Export"
+      ]
+    }
+  },
+  "export": {
+    "attendance": [
+      "Lesson Id",
+      "Class Name",
+      "Lesson Date",
+      "Student Name",
+      "Student Email Id",
+      "Attendance",
+      "Notes",
+      "Attendance Taken By"
+    ],
+    "allStudents": [
+      "Student Name",
+      "Student Email Id",
+      "Class Name",
+      "Present",
+      "Absent",
+      "Late",
+      "Justification",
+      "Total"
+    ],
+    "student": [
+      "Lesson Id",
+      "Class Name",
+      "Lesson Date",
+      "Student Name",
+      "Student Email Id",
+      "Attendance",
+      "Notes",
+      "Attendance Taken By"
+    ]
+  },
+  "chart": {
+    "screens": {
+      "header": {
+        "reports": [
+          "Report for Subjects",
+          "Report for Students",
+          "Report for Teachers",
+          "Special Reports"
+        ],
+        "lable": "Attendance Control Overview"
+      },
+      "subject": {
+        "controls": {
+          "date": {
+            "date1": ["Select a date"],
+            "date2": ["Starting date"],
+            "date3": ["Ending date"]
+          },
+          "dropdown": {
+            "teacher": "Start typing a name",
+            "class": "Select a class"
+          }
+        },
+        "boxs": [
+          "Subjects",
+          "Schedule Passes",
+          "Present",
+          "Absent",
+          "Delay",
+          "Justification"
+        ],
+        "pie": {
+          "pie1": {
+            "lbl": "Attendance by faculty"
+          },
+          "pie2": {
+            "lbl": "Attendance Records",
+            "dataLbl": ["Present", "Absent", "Late", "Justification"]
+          }
+        },
+        "column": {
+          "title": "Count by class and attendance",
+          "lableY": "Count of StudentEmailId",
+          "lableX": "Class Name",
+          "series": ["Present", "Absent", "Late", "Justification"]
+        },
+        "table": {
+          "header": [
+            "Class Name",
+            "Present",
+            "Absent",
+            "Late",
+            "Justification",
+            "Total"
+          ]
+        }
+      },
+      "student": {
+        "boxs": ["Total Students"],
+        "pie": {
+          "pie1": {
+            "lbl": "Colony Attendance"
+          },
+          "pie2": {
+            "lbl": "According to class schedule"
+          }
+        },
+        "column": {
+          "title": "Top of student attendance taken",
+          "lableY": "Count of Attendance",
+          "lableX": "Student Name"
+        },
+        "table": {
+          "header": [
+            "Student Name",
+            "Present",
+            "Absent",
+            "Late",
+            "Justification",
+            "Total"
+          ]
+        }
+      },
+      "special": {
+        "boxs": [
+          "Faculties",
+          "Subjects",
+          "Colonies",
+          "Scholarship student",
+          "Irregular students",
+          "Students employed"
+        ],
+        "pie": {
+          "pie1": {
+            "lbl": "Students per colony"
+          },
+          "pie2": {
+            "lbl": "By connection speed"
+          }
+        },
+        "column": {
+          "title": "Top attendance by neighborhood",
+          "lableY": "Count of Attendance",
+          "lableX": "Colonia"
+        },
+        "table": {
+          "header": [
+            "Colonia",
+            "Present",
+            "Absent",
+            "Late",
+            "Justification",
+            "Total"
+          ]
+        }
+      },
+      "teacher": {
+        "boxs": [
+          "Total teachers",
+          "Subjects",
+          "Schedule sessions",
+          "Schedule passes",
+          "Passes taken",
+          "Skipped passes"
+        ],
+        "pie": {
+          "pie1": {
+            "lbl": "Attendance by subject"
+          },
+          "pie2": {
+            "lbl": "According to class schedule"
+          }
+        },
+        "column": {
+          "title": "Top attendance taken by teacher",
+          "lableY": "Count of StudentEmailId",
+          "lableX": "Attendance Taken By"
+        },
+        "table": {
+          "header": [
+            "Attendance Taken By",
+            "Present",
+            "Absent",
+            "Late",
+            "Justification",
+            "Total"
+          ]
+        }
+      }
+    }
+  },
+  "Docs": [
+    {
+      "category": "INTRODUCTION",
+      "data": [
+        {
+          "title": "How can you create your ACV account?",
+          "content": [
+            {
+              "item": "Go to <a href=\"https://demo.acv.app\"> demo.acv.app </a>",
+              "type": "text"
+            },
+            {
+              "item": "Click the subscribe button on the left side of the navigation bar",
+              "type": "text"
+            },
+            {
+              "item": "Select any stroke plan",
+              "type": "text"
+            },
+            {
+              "item": "There are four different plans within the ACV: which is the free plan, the Bronze plan, the Silver plan and the Gold Plan",
+              "type": "text"
+            },
+            {
+              "item": "Click the Buy Now button for any of the plans",
+              "type": "text"
+            },
+            {
+              "item": "You will redirect to the registration page and you will need to fill in certain information.",
+              "type": "text"
+            },
+            {
+              "item": "You must add the name, the position, your institutional mail, the name of the school and the telephone number.",
+              "type": "text"
+            },
+            {
+              "item": "Please, read the term and the condition and accept it, then click the button Create my account",
+              "type": "text"
+            },
+            {
+              "item": "It will redirect to the payment page where you need to add your valid credit card details and after the payment is completed successfully we will provide you with a separate database and you will be the super administrator who has all the access to your account and the entire application. ",
+              "type": "text"
+            },
+            {
+              "item": "After successful registration, you will receive an invitation link to your email account that you added during the Microsoft registration process.",
+              "type": "text"
+            },
+            {
+              "item": "When you accept the invitation link, you will be redirected to the Microsoft page where you can set your password and display name",
+              "type": "text"
+            },
+            {
+              "item": "If you set the passwords correctly, it will redirect to <a href=\"https://demo.acv.app\"> demo.acv.app </a> home page.",
+              "type": "text"
+            },
+            {
+              "item": "Now, you can log in with your account and you will have access to all the functions of the ACV.",
+              "type": "text"
+            }
+          ],
+          "link": "#acv-account"
+        },
+        {
+          "title": "How can I load the student, teacher and lesson data?",
+          "content": [
+            {
+              "item": "After successfully registering and logging in, you can see the home manager screen within the application which is placed within the settings option.",
+              "type": "text"
+            },
+            {
+              "item": "When you select the \" Start \"button in the settings, you can see the startup manager screen.",
+              "type": "text"
+            },
+            {
+              "item": "You can download the sample Excel file where you can find the format of the Excel file and what kind of data it can upload.",
+              "type": "text"
+            },
+            {
+              "item": "There are two Excel files for the student, the teacher and the lesson, you can download it by clicking the download button.",
+              "type": "text"
+            },
+            {
+              "item": "In the lesson data template, you can add the information related to the lesson where you need to add the lesson title, the lesson date, the start time and the end time of the lesson and you also need to add the teacher of that lesson, it is a required field ",
+              "type": "text"
+            },
+            {
+              "item": "After completing the lesson data template, you can download the member data template where you can add the student, teacher, and administrator data",
+              "type": "text"
+            },
+            {
+              "item": "There are 3 possible roles which is teacher, student and administrator",
+              "type": "text"
+            },
+            {
+              "item": "You must add the title of the team member, the name of the member, the role of the member, etc.",
+              "type": "text"
+            },
+            {
+              "item": "After completing the template, you need to upload the Excel file step by step.",
+              "type": "text"
+            },
+            {
+              "item": "After successfully loading the excel sheet, you can see the popup modal showing how many student admins, lesson you have gotten",
+              "type": "text"
+            }
+          ],
+          "link": "#upload-data"
+        },
+        {
+          "title": "How can you upload images of student teachers?",
+          "content": [
+            {
+              "item": "There are 2 other steps in the home manager where you can upload the student, teacher, and manager images.",
+              "type": "text"
+            },
+            {
+              "item": "You can also download the zip file of student and teacher images for the sample purpose. You can get an idea of ​​how you need to manage the image file name of your student and teacher.",
+              "type": "text"
+            },
+            {
+              "item": "There are some rules for uploading the student and teacher image.",
+              "type": "text"
+            },
+            {
+              "item": "You must make sure that the image name of your student and teacher should be the student's email address or the teacher's email address.",
+              "type": "text"
+            },
+            {
+              "item": "You must have to upload the zip file for all students and teachers.",
+              "type": "text"
+            },
+            {
+              "item": "After creating the zip file, you can upload that zip file and that's it for the startup manager.",
+              "type": "text"
+            },
+            {
+              "item": "How can you find the class?",
+              "type": "text"
+            },
+            {
+              "item": "There are 3 ways to find the class within the acv.",
+              "type": "text"
+            },
+            {
+              "item": [
+                {
+                  "item": "With the class data, you can select the one from the date you loaded the classes during startup manager",
+                  "type": "text"
+                },
+                {
+                  "item": "docs1.jpeg",
+                  "type": "img"
+                },
+                {
+                  "item": "Using the teacher's name.",
+                  "type": "text"
+                },
+                {
+                  "item": "You can find the classes by teacher. You can select the teacher's from the drop-down menu or you can try the teacher's name and then you can select the teacher. After selecting the teacher, you can see all the classes that teacher takes . ",
+                  "type": "text"
+                },
+                {
+                  "item": "docs2.jpeg",
+                  "type": "img"
+                }
+              ],
+              "type": "list"
+            }
+          ],
+          "link": "#upload-images"
+        },
+        {
+          "title": "Selection of the class.",
+          "content": [
+            {
+              "item": "You can find the classes by the class name. You can select the class name from the drop down menu or you can type the class name in the drop down search box and you can select the class name . ",
+              "type": "text"
+            },
+            {
+              "item": "docs3.jpeg",
+              "type": "img"
+            }
+          ],
+          "link": "#select-class"
+        },
+        {
+          "title": "How can you take the attendance class?",
+          "content": [
+            {
+              "item": "First you have to select one of the classes that is placed on the right side",
+              "type": "text"
+            },
+            {
+              "item": "After selecting the class from the list, you can see all the students attending that class with the student's name and profile picture.",
+              "type": "text"
+            },
+            {
+              "item": "For attendance there are 3 options which are Present, Absent and Late. And you can also add Reasons for Absent such as Illness, Family Emergency, Not feeling well.",
+              "type": "text"
+            },
+            {
+              "item": "You can add the Notes for the student and you can add additional information in the Notes field, such as you can mention the homework or to-do.",
+              "type": "text"
+            },
+            {
+              "item": "After selecting the student's attendance, you can see how many students are present, absent, late and also see the Justification for the reason.",
+              "type": "text"
+            },
+            {
+              "item": "docs4.jpeg",
+              "type": "img"
+            }
+          ],
+          "link": "#take-attendance"
+        },
+        {
+          "title": "What is the use of the Topic and Task button on the assistance screen?",
+          "content": [
+            {
+              "item": "You can add the topic and the assignment of that class.",
+              "type": "text"
+            },
+            {
+              "item": "After selecting one of the buttons, you will find the popup modal where you can write the task or topic and then click the Save button.",
+              "type": "text"
+            }
+          ],
+          "link": "#topic-homework"
+        },
+        {
+          "title": "How can you take all the assistance at once?",
+          "content": [
+            {
+              "item": "docs5.jpeg",
+              "type": "img"
+            },
+            {
+              "item": "We provide such functionality where teachers can take attendance of students at once. You can find the checkbox at the top of the header. When you click on that checkbox, you will see the three more buttons that are for attendance, absent and late ",
+              "type": "text"
+            },
+            {
+              "item": "If you select one of the attendance options, all students will be selected as that option, and if you want to change the attendance of specific students, you can. For example, you have 70 students in class and you want to take 68 students as present and 2 are absent, then you can do this by selecting the checkbox, then select the \"Present \" button, then all students will be shown as Present, then select the absent button for the specific student you want as present ",
+              "type": "text"
+            }
+          ],
+          "link": "#attendance-once"
+        },
+        {
+          "title": "How can I add Notes for students?",
+          "content": [
+            {
+              "item": "You can find the additional input field along with the student row, where you can write the student's notes or note, whatever you want.",
+              "type": "text"
+            }
+          ],
+          "link": "#add-notes"
+        }
+      ],
+      "link": "#intro-to-acv"
+    },
+    {
+      "category": "DASHBOARD",
+      "data": [
+        {
+          "title": "Overview",
+          "content": [
+            {
+              "item": "Analytics is a very important feature in LCA. There are 4 analysis screens where a graph is a graphical representation for data visualization, in which \" the data is represented by symbols, such as bars in a bar chart, lines in a line chart, or pie charts in a pie chart \".",
+              "type": "text"
+            },
+            {
+              "item": "A chart can represent tabular numerical data, functions, or some types of quality structure and provides different information.",
+              "type": "text"
+            },
+            {
+              "item": "Here you can find 4 different analyzes which are:",
+              "type": "text"
+            },
+            {
+              "item": [
+                {
+                  "item": "Analysis by class (subject)",
+                  "type": "text"
+                },
+                {
+                  "item": "Analysis by students",
+                  "type": "text"
+                },
+                {
+                  "item": "Analysis by teachers",
+                  "type": "text"
+                },
+                {
+                  "item": "Analysis by special data (custom field)",
+                  "type": "text"
+                }
+              ],
+              "type": "list"
+            },
+            {
+              "item": "This analytical table is based on the class or subject the teachers take.",
+              "type": "text"
+            },
+            {
+              "item": "On this screen, you can find the data in two ways",
+              "type": "text"
+            },
+            {
+              "item": [
+                {
+                  "item": "Graphics display",
+                  "type": "text"
+                },
+                {
+                  "item": "Pie chart",
+                  "type": "text"
+                },
+                {
+                  "item": "Line chart",
+                  "type": "text"
+                },
+                {
+                  "item": "Tabular format",
+                  "type": "text"
+                }
+              ],
+              "type": "list"
+            }
+          ],
+          "link": "#overview"
+        },
+        {
+          "title": "Analysis by class (subject)",
+          "content": [
+            {
+              "title": "Pie chart",
+              "content": [
+                {
+                  "item": "There are two different pie charts available on the Analysis by Class (Subject) screen, which is Attendance by Faculty and Attendance Records.",
+                  "type": "text"
+                },
+                {
+                  "item": "docs6.jpeg",
+                  "type": "img"
+                }
+              ],
+              "link": "#class-pie-charts"
+            },
+            {
+              "title": "Bar chart",
+              "content": [
+                {
+                  "item": "There is a bar graph based on class. This table represents student attendance per class. It is how many students are present, absent, and late for a particular class.",
+                  "type": "text"
+                },
+                {
+                  "item": "If you hover over the bar graph, you will see how many students are present, absent or late.",
+                  "type": "text"
+                },
+                {
+                  "item": "docs17.jpeg",
+                  "type": "img"
+                }
+              ],
+              "link": "#class-bar-charts"
+            },
+            {
+              "title": "Tabular display",
+              "content": [
+                {
+                  "item": "The same data that you will find in table format found in the bar chart.",
+                  "type": "text"
+                },
+                {
+                  "item": "You can do more with tables, like you can sort the data based on Absent, Late, Present and total.",
+                  "type": "text"
+                },
+                {
+                  "item": "If you click this option, the data will be arranged in ascending or descending order.",
+                  "type": "text"
+                },
+                {
+                  "item": "docs18.jpeg",
+                  "type": "img"
+                }
+              ],
+              "link": "#class-table"
+            }
+          ],
+          "type": "topic",
+          "link": "#class-report"
+        },
+        {
+          "title": "Analysis by students",
+          "content": [
+            {
+              "title": "Pie chart",
+              "content": [
+                {
+                  "item": "There are two pie charts on this screen where one of the charts is based on a custom field that you added in the custom field section and the other is based on class scheduling.",
+                  "type": "text"
+                },
+                {
+                  "item": "The second pie chart shows the class data and where the class was scheduled.",
+                  "type": "text"
+                }
+              ],
+              "link": "#student-pie-charts"
+            },
+            {
+              "title": "Bar chart",
+              "content": [
+                {
+                  "item": "In this bar chart representing the student data, you can see all the student data showing the total number of students present.",
+                  "type": "text"
+                },
+                {
+                  "item": "If you hover over the bar graph, you can see the student's name and the total number of the present.",
+                  "type": "text"
+                },
+                {
+                  "item": "docs7.jpeg",
+                  "type": "img"
+                }
+              ],
+              "link": "#student-bar-charts"
+            },
+            {
+              "title": "Tabular display",
+              "content": [
+                {
+                  "item": "The same data that you will find in table format found in the bar chart.",
+                  "type": "text"
+                },
+                {
+                  "item": "You can do more with tables, like you can sort the data based on Absent, Late, Present and total.",
+                  "type": "text"
+                },
+                {
+                  "item": "If you click this option, the data will be arranged in ascending or descending order.",
+                  "type": "text"
+                }
+              ],
+              "link": "#student-table"
+            }
+          ],
+          "type": "topic",
+          "link": "#student-report"
+        },
+        {
+          "title": "Analysis by teachers",
+          "content": [
+            {
+              "title": "Pie chart",
+              "content": [
+                {
+                  "item": "Here are two pie charts available in the teacher analysis screen, one represents the subject data and the other represents the class data based on the class schedule.",
+                  "type": "text"
+                },
+                {
+                  "item": "docs8.jpeg",
+                  "type": "img"
+                }
+              ],
+              "link": "#teacher-pie-charts"
+            },
+            {
+              "title": "Bar chart",
+              "content": [
+                {
+                  "item": "This analysis screen represents the teachers chart where you can view the teacher data showing how many students are present, absent and late in that particular teacher class.",
+                  "type": "text"
+                }
+              ],
+              "link": "#teacher-table"
+            }
+          ],
+          "type": "topic",
+          "link": "#teacher-report"
+        }
+      ],
+      "link": "#dashboard"
+    },
+    {
+      "category": "ATTENDANCE HISTORY",
+      "data": [
+        {
+          "title": "Export student data",
+          "content": [
+            {
+              "item": "In the Attendance History section, you can find all the information related to the attendance of all students.",
+              "type": "text"
+            },
+            {
+              "item": "There are two ways to export or download student information in Excel format.",
+              "type": "text"
+            },
+            {
+              "item": [
+                {
+                  "item": "All student information.",
+                  "type": "text"
+                },
+                {
+                  "item": "Information of a single student.",
+                  "type": "text"
+                }
+              ],
+              "type": "list"
+            },
+            {
+              "item": "There are three ways to filter student information.",
+              "type": "text"
+            },
+            {
+              "item": [
+                {
+                  "item": "To select the start and end date",
+                  "type": "text"
+                },
+                {
+                  "item": "To select the teacher",
+                  "type": "text"
+                },
+                {
+                  "item": "To select the class",
+                  "type": "text"
+                },
+                {
+                  "item": "docs11.jpeg",
+                  "type": "img"
+                }
+              ],
+              "type": "list"
+            },
+            {
+              "item": "You can download all the information of the students about the attendance history by clicking this Export button. Data in Excel sheet format where you will find the name of the student, the name of the teacher, the name of the class, the date of the lesson, the start time of the lesson, the attendance taken by and many more. ",
+              "type": "text"
+            },
+            {
+              "item": "You can download the information of a single user about the attendance history by clicking the Export button that is placed in the rows of the table.",
+              "type": "text"
+            },
+            {
+              "item": "If you can find the same information found in the Excel file above",
+              "type": "text"
+            }
+          ],
+          "link": "#export-data"
+        },
+        {
+          "title": "How can the student's information be exported or downloaded?",
+          "content": [
+            {
+              "item": "You can download all the information of the students about the attendance history by clicking this Export button. Data in Excel sheet format where you will find the name of the student, the name of the teacher, the name of the class, the date of the lesson, the start time of the lesson, the attendance taken by and many more. ",
+              "type": "text"
+            },
+            {
+              "item": "You can download the information of a single user about the attendance history by clicking the Export button that is placed in the rows of the table.",
+              "type": "text"
+            },
+            {
+              "item": "If you can find the same information found in the Excel file above.",
+              "type": "text"
+            }
+          ],
+          "link": "#student-export"
+        }
+      ],
+      "link": "#attendance-history"
+    },
+    {
+      "category": "SETTINGS",
+      "data": [
+        {
+          "item": "There are two tabs on the configuration page which are Students and Teacher. You can manage student and teacher information.",
+          "type": "info"
+        },
+        {
+          "title": "Students",
+          "content": [
+            {
+              "item": "docs12.jpeg",
+              "type": "img"
+            },
+            {
+              "item": "You can also view the student's personal information and attendance history.",
+              "type": "text"
+            },
+            {
+              "item": "You can check how many lessons you have attended or how many lessons you have missed or missed.",
+              "type": "text"
+            },
+            {
+              "item": "You can also view the information related to the custom field.",
+              "type": "text"
+            }
+          ],
+          "link": "#manage-students"
+        },
+        {
+          "title": "Teachers",
+          "content": [
+            {
+              "item": "docs13.jpeg",
+              "type": "img"
+            },
+            {
+              "item": "In a selection of teachers, you can see the teacher's personal information and information related to their lessons, where you can find how many students are present in your lesson.",
+              "type": "text"
+            },
+            {
+              "item": "You can find the teacher role, there are two roles which are administrator and teacher.",
+              "type": "text"
+            },
+            {
+              "item": "If the teacher has an administrator role, you can see the blue dot with the text \" Administrator \".",
+              "type": "text"
+            }
+          ],
+          "link": "#manage-teachers"
+        }
+      ],
+      "link": "#setting"
+    },
+    {
+      "category": "CUSTOM FIELDS",
+      "data": [
+        {
+          "title": "Introduction to custom fields",
+          "content": [
+            {
+              "item": "Custom fields are used to display a table of students based on your custom data. Basically, custom fields are associated with students, where we can add 5 custom fields for each student.",
+              "type": "text"
+            },
+            {
+              "item": "You can view and filter student data and display table based on student custom field.",
+              "type": "text"
+            },
+            {
+              "item": "The administrator must load the data from the student's custom fields to see the chart on the dashboard.",
+              "type": "text"
+            },
+            {
+              "item": "We are providing the 5 default custom fields to students.",
+              "type": "text"
+            },
+            {
+              "item": "The administrator can add or delete the information and description of the custom field.",
+              "type": "text"
+            },
+            {
+              "item": "You can add a maximum of 10 custom fields, where you can only enable the 5 custom fields, the rest of the fields will be disabled.",
+              "type": "text"
+            },
+            {
+              "item": "You can disable and enable custom fields according to your interest.",
+              "type": "text"
+            }
+          ],
+          "link": "#custom-fields"
+        },
+        {
+          "title": "How to add the new custom fields?",
+          "content": [
+            {
+              "item": "You can find the \" Add \"button at the top of the right side.",
+              "type": "text"
+            },
+            {
+              "item": "Click the Add button, a template will open where you can see the custom field title, descriptions, field type, and enable and disable option.",
+              "type": "text"
+            },
+            {
+              "item": "After filling in the details, click the \" Save \"button, your custom field has been added.",
+              "type": "text"
+            },
+            {
+              "item": "docs14.jpeg",
+              "type": "img"
+            },
+            {
+              "item": "You can edit the existing custom fields and disable them.",
+              "type": "text"
+            },
+            {
+              "item": "docs15.jpeg",
+              "type": "img"
+            }
+          ],
+          "link": "#add-cf"
+        },
+        {
+          "title": "How to add data from student custom fields?",
+          "content": [
+            {
+              "item": "There is an option where you can load the excel sheet with the student data.",
+              "type": "text"
+            },
+            {
+              "item": "You can download the sample Excel sheet and fill in the student data.",
+              "type": "text"
+            },
+            {
+              "item": "When you are ready with the student custom field data, you can upload that Excel file directly.",
+              "type": "text"
+            },
+            {
+              "item": "docs16.jpeg",
+              "type": "img"
+            }
+          ],
+          "link": "#add-cf-data"
+        }
+      ],
+      "link": "#custom-fields"
+    },
+    {
+      "category": "ADMINISTRATE SCHOOL",
+      "data": [
+        {
+          "item": [
+            {
+              "item": "You can manage your school related information where you can update:",
+              "type": "info"
+            },
+            {
+              "item": [
+                {
+                  "item": "Name of the school",
+                  "type": "text"
+                },
+                {
+                  "item": "Name of the school",
+                  "type": "text"
+                },
+                {
+                  "item": "School Address",
+                  "type": "text"
+                },
+                {
+                  "item": "Custom school logo",
+                  "type": "text"
+                }
+              ],
+              "type": "list"
+            },
+            {
+              "item": "Here are some cool things with the school logo. You can upload your logo of choice to ACV and you can see your logo uploaded on the top left side instead of the Tangible It logo.",
+              "type": "info"
+            }
+          ],
+          "type": "infoList"
+        },
+        {
+          "title": "How can I upload a custom logo?",
+          "content": [
+            {
+              "item": "docs20.jpeg",
+              "type": "img"
+            },
+            {
+              "item": "You can see the File input box labeled School Image (136 * 32). If you want to update your logo with Tangible IT logo, you can click this button, you can select your logo in the dialog box and then click the Save Button. ",
+              "type": "info"
+            },
+            {
+              "item": [
+                {
+                  "item": "After clicking the Save button, your logo with the screen on the left side and replace it with the default logo.",
+                  "type": "text"
+                },
+                {
+                  "item": "By default you can find the default logo of our Tangible IT logo and this change is only allowed to super administrators, teachers and administrator cannot manage school information and cannot upload custom logo . ",
+                  "type": "text"
+                }
+              ],
+              "type": "list"
+            }
+          ],
+          "link": "#update-school-info"
+        }
+      ],
+      "link": "#manage-school"
+    }
+  ],
+  "DocsLables": ["Find Anything", "Search"],
+  "startUp": {
+    "initial": [
+      "Which Database you want to choose?",
+      "Demo Data",
+      "Upload Data",
+      "This action will switch your database, are you sure about switching to demo acv?",
+      "Upload Data Confirmation",
+      "This action will switch your database to current db, are you sure about switching to your current acv?",
+      "Confirm",
+      "Cancel",
+      "Okay",
+      "Something went wrong! contact to customer service if problem not getting solved!",
+      "Demo Data Confirmation"
+    ],
+    "controls": {
+      "navigation": [
+        "Lessons Data",
+        "Members Data",
+        "Students Photos",
+        "Teachers Photos",
+        "Finish"
+      ],
+      "action": [
+        "Download",
+        "Select a file",
+        "Upload",
+        "Home",
+        "Previous",
+        "Next",
+        "Skip",
+        "Congratulations!"
+      ],
+      "modal": [
+        "Okay",
+        "Confirm",
+        "Cancel",
+        "Return to homepage",
+        "Do you really want to go to the home page? You will lose all the changes that are not saved."
+      ]
+    },
+    "content": [
+      "<h1> Lesson data </h1> <ul className = 'Karla list'> <li> Download the template and fill in all the details as shown in the headings. </li> <li > Do not add special characters in dates, times or emails. </li> <li> Do not change the format in <b className = 'fw6'> ClassName </b> (lesson name). Do not remove '-' in the middle. </li> <li> Valid class name: <b className = 'fw6'> <a title='Category'> Natural Sciences </a> - <a title='ClassName'> Biology 1</a> - <a title='GroupNumber'> 301 </a> </b>. <QuestionCircleIcon outline title = 'Natural Sciences (Category) - Biology 1 (ClassName) - 301 (GroupNumber)' /> </ li> </ul> ",
+      "<h1> Member details </h1> <ul className = 'Karla list'> <li> Download the template and fill in all the details. </li> <li> No use special characters in emails. </li> <li> You can assign these roles to users. </li> <ul> <li> <b className = 'fw6'> Administrator </b>: Supervise and take attendance on behalf of any teacher. </li> <li> <b className = 'fw6'> Teacher </b>: Take your own attendance. </li> <li> <b className = 'fw6'> Student </b>: It is subject to attendance. </li> </ul> </ul> ",
+      "<h1> Image of students </h1> <ul className = 'Karla list'> <li> Download the ZIP sample and create a new one for students.</li> <li> The image file must be in one of these formats: png, jpg, or jpeg. </li> <li> Save the file name as the student's email address. </li> <li > Example: the email is <b className = 'fw6'> abc.xyz@example.com </b> the name should be - <b className = 'fw6'> abc. xyz@example.com.jpg </b> </ li> </ul> ",
+      "<h1> Teacher image </h1> <ul className = 'Karla list'> <li> Download the ZIP sample and create a new to teachers. </li> <li> The image file should be in one of these formats: png, jpg, or jpeg. </li> <li> Save the file name as the teacher's email address. </li> <li> Example:the email is <b className = 'fw6'> abc.xyz@example.com </b> the name should be - <b className = 'fw6'> abc.xyz@example .com.jpg </b> </li> </ul> "
+    ]
+  },
+  "setting": {
+    "init": [
+      "Manage -",
+      "➜ Please select any option to show data...",
+      "Search...",
+      "Close",
+      "Next",
+      "Previous",
+      "Page limit"
+    ],
+    "student": [
+      "Attendance",
+      "Custom Fields",
+      "Total",
+      "Presente",
+      "Ausente",
+      "Retardo",
+      "Justificado"
+    ],
+    "teacher": [
+      "Lesson Information",
+      "Total Students",
+      "Presente",
+      "Ausente",
+      "Retardo",
+      "Justificado",
+      "Change Role",
+      "No Lesson Information Available!"
+    ],
+    "customField": {
+      "content": "<li><b className='fw6'>Download</b> the template and add the appropriate data.</li><li>You can add data (<b className='fw6'>Yes</b> or <b className='fw6'>No</b>)  if the selected field type is <b className='fw6'>Boolean</b>.</li><li>You can add any <b className='fw6'>text </b> if the selected field type is <b className='fw6'>Text</b>.</li><li>You can add any <b className='fw6'>numeric values</b> if the selected field's type is <b className='fw6'>Numeric</b>.</li><li>Please do not add, remove or change order of custom field headings in given excel sheet.</li><li>You can only provide customField data; do not edit user emails.</li><li>Upload the template once you are done modifying data.</li>"
+    },
+    "names": ["Students", "Teachers", "Custom Fields", "Schools"],
+    "school": []
+  },
+  "landing": {
+    "initial": [],
+    "header": [
+      [
+        "Information",
+        ["Characteristics", "Manage attendance control."],
+        ["Teachers", "Manage teacher control."],
+        ["Directors", "Manage enterprises control."]
+      ],
+      [
+        "Resource",
+        ["Parents", "Get attendance reports from your children."],
+        ["Authorities", "Get Information on Dropout Indicators."],
+        ["Schools", "Use personalized tools to counter absenteeism."]
+      ],
+      "Docs",
+      "Prices",
+      "Contact",
+      "Access",
+      "Subscription"
+    ],
+    "hero": [
+      "It is time to expand your",
+      "online classes",
+      "Manage attendance control and provide executive visibility through dashboards illustrating attendance behavior.",
+      "Request demo",
+      "Documentation"
+    ],
+    "feature": [
+      "ACV dashboards are updated in real time",
+      "Check attendance behavior anytime, anywhere.",
+      [
+        "Preload classes",
+        "Import your institution's official calendar from your school systems."
+      ],
+      [
+        "Take assists",
+        "Audit the assists taken or perform assistances in substitution."
+      ],
+      [
+        "Analyze behaviors",
+        "For this you have 4 interesting information boards."
+      ]
+    ],
+    "teacher": [
+      "Main functionalities for teachers",
+      "The portability and responsiveness features allow you to use any device to do the following tasks.",
+      [
+        "Take attendance of scheduled classes.",
+        "Register topic of the day and respective task.",
+        "Assign notes per student.",
+        "Export attendance information."
+      ]
+    ],
+    "director": [
+      "Easy to operate!",
+      "Live the experience",
+      [
+        "New",
+        "Quick assistance",
+        "Allow teachers to take attendance in seconds and from any device."
+      ],
+      [
+        "Tips",
+        "Set metrics",
+        "To help you define strategies against dropping out."
+      ],
+      [
+        "Update",
+        "Monitor",
+        "See dashboards with indicators affected by attendance."
+      ]
+    ],
+    "resource": [
+      [
+        "Parents",
+        "Here you can find out what information you can request from the teacher to get the student attendance reports.",
+        "Learn more"
+      ],
+      [
+        "Authorities",
+        "You can read about safety, transportation, communication or other problems that encourage absenteeism to follow any procedure.",
+        "Learn more"
+      ],
+      [
+        "Schools",
+        "LCA indicators can support the definition of an anti-dropout strategy, lesson planning and the identification of the exact moment when assistance is taken.",
+        "Learn more"
+      ]
+    ],
+    "price": [
+      "Simple and direct prices",
+      "Manage attendance control and provide executive visibility through dashboards illustrating attendance behavior.",
+      [
+        "Teachers",
+        "Students",
+        "Lessons",
+        "Month",
+        "Free updates",
+        "Assistance in 1 business day"
+      ],
+      "Buy now",
+      [
+        "Did not find the plan according to your needs?",
+        "Please",
+        "for the feature you are looking for, we will contact you with the best alternative."
+      ],
+      " contact us "
+    ],
+    "registration": [
+      "Create your account",
+      ["Made with ", "for the educational community."],
+      "Pedro Pérez",
+      "Head of the IT department",
+      "name@school-mail.com",
+      "Full name of your school.",
+      "Street, number, neighborhood, city.",
+      "+15144572886",
+      ["I accept the", " terms and conditions"],
+      "Create my account",
+      ["Do you already have an account?", " Login"]
+    ],
+    "demo": [
+      ["Name of school:", "Full name of your school"],
+      ["School address:", "Street, number, neighborhood, city"],
+      ["School phone:", "+15144572886"],
+      ["Username:", "Pedro Pérez"],
+      ["Email:", "name@school-mail.com"],
+      ["Close", "Send"]
+    ],
+    "footer": [
+      "Brilliant solutions for your school",
+      "Learn more about our applications.",
+      "ACV manages attendance control and provides executive visibility through dashboards illustrating attendance behavior.",
+      ["About", "Terms and Conditions", "Privacy Policy", "Cookies", "Contact"],
+      ["US", "Verify coupon", "Help Center", "Docs"],
+      "Copyright 2021",
+      "ACV - Virtual Classroom Assistant",
+      ". All rights reserved.",
+      [
+        "Name",
+        "Pedro Pérez",
+        "Email",
+        "name@correoescuela.com",
+        "Message",
+        "Write your message here.",
+        "I accept the",
+        "terms and Conditions",
+        "Leave a message"
+      ],
+      "Help"
+    ]
+  }
+}

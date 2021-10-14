@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;800&display=swap");
+
+body {
+  /* margin: 5em; */
+  /* margin-top: -5rem; */
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  /* user-select: none; */
+  overflow-x: clip;
+}
+::selection {
+  color: white;
+  background-color: #162c51;
+}
+
+.Karla {
+  font-family: "Karla", sans-serif;
+  color: #212529;
+}
+
+.fs16 {
+  font-size: 16px;
+}
+
+.fw6 {
+  font-weight: 600 !important;
+}
+
+.tcap {
+  text-transform: capitalize;
+}
+
+img{
+  user-select: none;
+   -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  /* user-drag: none; */
+}
+
+.Privacy.container,.Terms.container,.Docs.container{
+  font-family: "Karla", sans-serif;
+  color: #212529;
+  margin-inline: 2.5rem;
+}
+
+.Privacy h1{
+  margin-top: 1.50em;  
+  text-decoration: underline;
+}
+.Privacy h2,.Privacy h3,.docs .h3{
+  font-size: 1.75em;
+}
+
+@media only screen and (min-width: 900px) {
+  .Privacy.container,.Terms.container,.Docs.container{
+    margin: 50px 0;
+    margin-inline: 10rem;
+  }
+}
+
+.cur-pointer{
+  cursor: pointer;
+}
