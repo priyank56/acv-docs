@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 import { Input } from "@fluentui/react-northstar";
 import { Grid, Segment, SearchIcon } from "@fluentui/react-northstar";
@@ -9,15 +10,18 @@ import * as Icon from "react-feather";
 import parse from "html-react-parser";
 import i18n from "../Helper/i18n";
 import Icon1 from "../Assets/images/Icon.png";
+import contactIcon from "../Assets/images/contact-list-icon.png";
 
 import "./assets/css/quick-website.scss";
 import "./Docs.css";
+const URL = "https://acv-backend-demo.azurewebsites.net";
 
 const Docs = () => {
   const { t } = useTranslation();
   const [selLan, setSelLan] = useState(i18n.language);
   const [searchInput, setSearchInput] = useState("");
   const [searchResult, setSearchResult] = useState([]);
+  const [isChecked, setIsChecked] = React.useState(true);
 
   let logKey = (e) => {
     if (e.which === 191 && searchInput === "") {
@@ -151,12 +155,13 @@ const Docs = () => {
               <li
                 className="nav-item nav-item-spaced dropdown dropdown-animate cur-pointer"
                 data-toggle="hover"
-                onClick={() => (window.location.href = "/")}
+                style={{ display: "block" }}
               >
                 <div
                   style={{
                     height: "75px",
                     backgroundColor: "rgb(243, 242, 241)",
+                    display: "flex",
                   }}
                 >
                   <img
@@ -168,8 +173,20 @@ const Docs = () => {
                       width: "58px",
                       borderRadius: "6px",
                       backgroundSize: "cover",
+                      margin: "auto",
                     }}
+                    onClick={() => (window.location.href = "/")}
                   />
+                  <h6
+                    className="btn_contact_us btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#contactUs-model"
+                  >
+                    <span className="contact_icon_span">
+                      <img src={contactIcon} />
+                    </span>
+                    Contactar a soporte
+                  </h6>
                 </div>
               </li>
               <li
@@ -240,7 +257,7 @@ const Docs = () => {
                       ? "PT"
                       : selLan === "hi"
                       ? "HI"
-                      : "No"}
+                      : navigator.language || navigator.userLanguage}
                   </span>
                 </a>
                 <div
@@ -261,7 +278,7 @@ const Docs = () => {
                           i18n.changeLanguage("es");
                         }}
                       >
-                        Spanish
+                        Español
                       </button>
                     </li>
                     <li
@@ -293,7 +310,7 @@ const Docs = () => {
                           i18n.changeLanguage("fr");
                         }}
                       >
-                        French
+                        Français
                       </button>
                     </li>
                     <li
@@ -325,7 +342,7 @@ const Docs = () => {
                           i18n.changeLanguage("hi");
                         }}
                       >
-                        Hindi
+                        हिंदी
                       </button>
                     </li>
                   </ul>
@@ -606,6 +623,149 @@ const Docs = () => {
                 <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="button" className="btn btn-primary">Save changes</button>
               </div> */}
+          </div>
+        </div>
+      </div>
+      <div
+        className="modal fade"
+        id="contactUs-model"
+        tabIndex="-1"
+        role="dialog"
+        aria-labelledby="contactUs-model"
+        aria-hidden="true"
+        style={{ backgroundColor: "#0000005e" }}
+      >
+        <div className="modal-dialog" role="document">
+          <div className="modal-content text-left" style={{ top: "100px" }}>
+            <div className="col-lg-12 col-md-12 col-sm-12 d-flex flex-column text-start px-4 pb-3 pt-4">
+              <div>
+                {/* <Icon.X
+                        size="18"
+                        style={{ float: "right", cursor: "pointer" }}
+                        onClick={() => setIsHelp(false)}
+                      /> */}
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault();
+
+                    axios
+                      .post(`${URL}/api/user/get-contact`, {
+                        mail: document.getElementById("input-email").value,
+                        name: document.getElementById("input-name").value,
+                        message: document.getElementById("input-message").value,
+                      })
+                      .then((res) => {
+                        setIsHelp(false);
+                      })
+                      .catch((err) => {
+                        console.log(err);
+                      });
+                  }}
+                  method="POST"
+                >
+                  <div className="form-group">
+                    <label className="form-control-label" htmlFor="input-name">
+                      {t("landing").footer[8][0]}
+                    </label>
+                    <div className="input-group input-group-merge">
+                      <input
+                        type="text"
+                        className="form-control form-control-prepend"
+                        id="input-name"
+                        placeholder={t("landing").footer[8][1]}
+                        name="name"
+                        // onChange={(e) => onInputChange(e)}
+                        required
+                      />
+                      <div className="input-group-prepend">
+                        <span className="input-group-text">
+                          <Icon.User size="18" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="form-group">
+                    <label className="form-control-label" htmlFor="input-email">
+                      {t("landing").footer[8][2]}
+                    </label>
+                    <div className="input-group input-group-merge">
+                      <input
+                        type="email"
+                        className="form-control form-control-prepend"
+                        // style={{ borderColor: isError ? "#d3313a" : "" }}
+                        id="input-email"
+                        placeholder={t("landing").footer[8][3]}
+                        name="email"
+                        // onChange={(e) => onInputChange(e)}
+                        // onBlur={checkUserExits}
+                        required
+                      />
+                      <div className="input-group-prepend">
+                        <span
+                          className="input-group-text"
+                          // style={{
+                          //   borderColor: isError ? "#d3313a" : "",
+                          // }}
+                        >
+                          <Icon.Mail size="18" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="form-group">
+                    <label
+                      className="form-control-label"
+                      htmlFor="input-message"
+                    >
+                      {t("landing").footer[8][4]}
+                    </label>
+                    <div className="input-group input-group-merge">
+                      <textarea
+                        className="form-control"
+                        id="input-message"
+                        rows="3"
+                        placeholder={t("landing").footer[8][5]}
+                        name="message"
+                        // onChange={(e) => onInputChange(e)}
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div className="my-4">
+                    <div className="custom-control custom-checkbox mb-3">
+                      <input
+                        type="checkbox"
+                        className="custom-control-input"
+                        id="check-terms"
+                        onChange={() => setIsChecked(!isChecked)}
+                        checked={isChecked}
+                      />
+                      <label
+                        className="custom-control-label"
+                        htmlFor="check-terms"
+                      >
+                        {t("landing").footer[8][6] + " "}
+                        <a href="/terms" style={{ color: "#d3313a" }}>
+                          {t("landing").footer[8][7]}
+                        </a>
+                      </label>
+                    </div>
+                  </div>
+                  <div className="mt-4">
+                    <button
+                      type="submit"
+                      className="btn btn-block btn-primary"
+                      id="submit-btn"
+                      disabled={!isChecked}
+                    >
+                      {t("landing").footer[8][8]}
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>

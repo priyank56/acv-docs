@@ -187,3 +187,20 @@ button.Search-searchbar {
 .font-Mukta {
   font-family: "Mukta", sans-serif !important;
 }
+
+h6.btn_contact_us {
+  margin: auto;
+}
+
+.contact_icon_span {
+  padding: 6px;
+}
+
+.contact_icon_span img {
+  width: 18px;
+  height: 18px;
+}
+
+h6.btn_contact_us.btn.btn-primary {
+  padding: 6px 10px;
+}
